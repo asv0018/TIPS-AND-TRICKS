@@ -29,4 +29,11 @@ arduino-cli compile -b arduino:avr:uno test
 To upload the code :
 arduino-cli upload -p COM26 -b arduino:avr:uno test
 
+To search for libraries for example to search for blynk :
+arduino-cli lib search blynk
+
+To install the library blynk, properly write the name of the library :
+arduino-cli lib install blynk
+
+
 SIMPLE! EXCITING! FUN!
