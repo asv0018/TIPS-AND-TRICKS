@@ -17,6 +17,9 @@ arduino-cli sketch new test
 
 now head to the directory with a IDE(Atom/Sublime) and code it.
 
+To check the installed libraries :
+arduino-cli lib list
+
 To view the list of boards attached to PC :
 arduino-cli board list
 
