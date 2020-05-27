@@ -1,0 +1,48 @@
+******************************************
+*SERIAL COMMUNICATION BETWEEN TWO DEVICES*
+******************************************
+First make sure your device is working
+connect Rx -> Tx
+connect Tx -> Rx
+Then, use the below code to know how to do this:-
+
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  while(Serial.available()){
+    Serial.println(Serial.readString());
+  }
+  while(!Serial.available()){
+    Serial.println("This will print until u dont text me!.");
+  }
+  delay(100);
+}
+
+****************************************************************************************************************
+COMMON MISTAKES DONE BY GUYS :-
+****************************************************************************************************************
+IF IT IS A NORMAL C CODE, THEN THE BELOW CODE SHOULD WORK. BUT UNFORTUNATELY BELOW CODE DOESNT WORK WELL IN 
+ARDUINO IDE. IT DEPENDS ON INTERNAL STRUCTURE OF MICROCONTROLLER
+SO DONT CODE IT AS SHOWN BELOW.
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if(Serial.available()){
+    Serial.println(Serial.readString());
+  }
+  if(!Serial.available()){
+    Serial.println("This will print until u dont text me!.");
+  }
+  delay(100);
+}
+
