@@ -1,5 +1,5 @@
 <hr>
-<h1><b>Documentation to use some of the techstacks</b></h1>
+<h1><b>Documentation of some Tricks & Tips in working with tech</b></h1>
  <hr>
  <p>
   Check the above respective text files for your requirements
