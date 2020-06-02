@@ -12,6 +12,7 @@ adb -s <device ID> tcpip 5555  //here you get the device id in the above command
 NOW DISCONNECT USB BUT LET PHONE AND PC BE ON SAME WiFi
 You get the IP address of your phone in about phone, in status:
 adb connect <IP address of your device>:5555
+Ex: adb connect 25.86.126.74
 
 Now run the command given below to check is your phone connected:
 adb devices
